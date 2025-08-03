@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Inventory & Sales Management</h1>
+
+    <h2>Add Product</h2>
+    <input type="text" id="productName" placeholder="Product Name">
+    <input type="number" id="productPrice" placeholder="Product Price">
+    <input type="number" id="productStock" placeholder="Product Stock">
+    <button onclick="addProduct()">Add Product</button>
+
+    <h2>Update the Stock</h2>
+    <input type="text" id="productName" placeholder="Product Name">
+    <input type="number" id="newStock" placeholder="Enter new Stock">
+    <button onclick="updateStock()">Update Stock</button>
+    
+    <h2>Available Products</h2>
+    <button onclick="fetchProducts()">Refresh Products</button>
+    <h4>Product List</h4>
+    <table border="1" class="table">
+        <thead>
+            <tr>
+                <th>Name</th><th>Price</th><th>Stock</th>
+            </tr>
+        </thead>
+        <tbody id="product-table"></tbody>
+    </table>
+
+    <h2>Sell Product</h2>
+    <input type="text" id="sellProductName" placeholder="Product Name">
+    <input type="number" id="sellQuantity" placeholder="Quantity">
+    <button onclick="sellProduct()">Add Product</button>
+    
+    <h2>Sales Prediction</h2>
+    <button onclick="predictSales()">Predict next day sales</button>
+    <p id="predictionResult"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
