@@ -103,9 +103,3 @@ Open [http://127.0.0.1:5500/index.html](http://127.0.0.1:5500/index.html)
 from flask_cors import CORS
 CORS(app)
 ```
-
----
-
-
-Do you want me to also make you a **`requirements.txt`** so you can easily install all dependencies before uploading to GitHub? That way, your project will run easily for anyone who downloads it.
-```
